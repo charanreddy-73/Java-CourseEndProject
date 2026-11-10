@@ -92,6 +92,7 @@ public class ShoppingSystem {
                 i--;
             }
         }
+
         double total = OrderProcessingSystem.calculateTotal(
             cart.getCart()
         );
