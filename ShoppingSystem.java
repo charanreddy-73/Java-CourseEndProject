@@ -106,8 +106,6 @@ public class ShoppingSystem {
 
         System.out.println("Total price: Rs. " + total);
         System.out.println("Average price: Rs. " + average);
-
-        // Lambda expressions
         ProductFilter onPrice =
             (item, avg) ->
                 OrderProcessingSystem.priceMap.get(item) > avg;
@@ -116,7 +114,7 @@ public class ShoppingSystem {
             (item, value) ->
                 item.equals("Laptop") || item.equals("Iphone");
 
-        // Filtering using streams
+
         System.out.println("\nProducts above average price:");
 
         cart.getCart().stream()
